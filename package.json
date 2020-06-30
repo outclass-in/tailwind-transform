@@ -1,6 +1,6 @@
 {
   "name": "@outclass/tailwind-transform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command Line tool to Add a prefix of tw- to all tailwind classes to avoid conflicts with other frameworks ",
   "main": "index.js",
   "contributors": [
