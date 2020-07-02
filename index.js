@@ -30,9 +30,11 @@ fs.readFile(`${CURR_DIR}/${fileArg}`, 'utf8', function (err,data) {
       ),
       `$1${prefix}$2`,
     )
-  })
+  });
+  //Replace class names for react
+  data = data.replace(/class=/g,'className=');
 
-  fs.writeFile(`${CURR_DIR}/result.js`, data, 'utf8', function (err) {
+  fs.writeFile(`${CURR_DIR}/${fileArg}`, data, 'utf8', function (err) {
      if (err) return console.log(err);
   });
 });
